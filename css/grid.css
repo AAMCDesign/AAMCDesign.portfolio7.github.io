@@ -1,0 +1,56 @@
+.container{
+    height:100%;
+    /* Activates CSS Grid Functionality */
+    display: grid;
+    /* Builds a 12 Columns */
+    grid-template-columns: repeat(12, 1fr auto);
+    /* builds the rows */
+    /* auto becomes the remaining space */
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+    grid-gap:30px;
+  }
+  
+  div{
+    border:solid black;
+  }
+  
+  /* the four sections of our content */
+  .header{
+    /* defines the area that the content will make up */
+    grid-area:h;
+    /* list-style-type: none;
+    margin: 0;
+    padding: 0; */
+  }
+  
+  .menu{
+    /* defines the area that the content will make up */
+    grid-area:m;
+  }
+  
+  .content{
+    /* defines the area that the content will make up */
+    grid-area:c;
+  }
+  
+  .footer{
+    /* defines the area that the content will make up */
+    grid-area:f;
+  }
+
+
+
+
+
+
+  /* Inline supposed to make things horizontal??? */
+  li{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
