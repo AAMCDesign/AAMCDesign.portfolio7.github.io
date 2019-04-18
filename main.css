@@ -50,11 +50,11 @@ a {
 nav{
     position: fixed;
 }
-
+/* 
 div{
     background-color: lightgray;
     /* margin: 10px; */
-}
+/* } */
 
 #cname {
     background-color: lightgrey;
