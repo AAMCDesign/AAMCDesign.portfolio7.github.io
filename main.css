@@ -15,12 +15,11 @@ fieldset {
 #title{
     margin-top: 0px;
     text-align: center;
-    padding-top: 70px;
+    /* padding-top: 70px; */
 }
 
 h1{
-    margin-left: 0px;
-    padding-top:30px;
+ margin-top:-20px;
 }
 
 h2{
@@ -50,11 +49,6 @@ a {
 nav{
     position: fixed;
 }
-/* 
-div{
-    background-color: lightgray;
-    /* margin: 10px; */
-/* } */
 
 #cname {
     background-color: lightgrey;
@@ -113,14 +107,11 @@ body{
 .resume{
     padding-left: 15px;
 }
-/* .image{
-    transform: scale(.5);
-    margin: 0;
-} */
-    /* ==================================
-    Animation Station
-     ==================================*/
 
-     .hotbar:hover{
-         background-color: darkgray;
-     }
+/* ==================================
+         Animation Station
+====================================*/
+
+.hotbar:hover{
+     background-color: darkgray;
+ }

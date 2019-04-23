@@ -1,37 +1,145 @@
-.mainContainer {
-  display: grid;
-  /* grid-gap: 6px; */
-  height: 100% ;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 20% 50% auto;
-  grid-template-areas: 
-      "n"
-      "l"
-      "h"
-      "a"
-      "f";    
-      
-}
-.logo {
-  grid-area: l;
-}
-.scroll {
-  grid-area: h;
+* {box-sizing: border-box;}
+
+.wrapper {
+    background-color:lightgray;
+    margin: 100 auto;
+    padding: 1em;
 }
 
-nav {
-  grid-area: n;  
+.wrapper > div {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:lightgray;
+    padding: 1em;
 }
 
-header {
-  grid-area: h;
+.header {
+    grid-area: h;
 }
 
-article {
-  grid-area: a; 
+.main {
+    grid-area: m;
+    margin:0px;
+    padding-top:-30px;
 }
 
-footer {
+.sidebar {
+    grid-area: s;
+}
+
+.footer {
   grid-area: f;
 }
+/* where you set up the grid */
+/* when the screen is 750px or smaller, it will change the wrapper */
+.wrapper {
+    display: grid;
+    /* building 3 rows */
+    grid-auto-rows: 15% auto auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* using four rows */
+    grid-template-areas: 
+      "h"
+      "s"
+      "m"
+      "f";
+}
+/* @media (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "s s s m m m m m m"
+          "f f f f f f f f f";
+    }
+} */
 
+/* when the screen is 750px or bigger, do this grid system */
+@media (min-width: 750px) {
+   
+
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "h h h h h h h h h"
+          "s s s s m m m m m"
+          "f f f f f f f f f";
+    }
+}
+
+header h3:hover{
+  font-size: 30px;
+}
+
+header p:hover{
+  font-size: 20px;
+}
+
+.masthead {
+  margin-bottom: 60px;
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: 4em;
+  font-style: 700;
+  text-transform: lowercase;
+}
+
+.masthead h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+
+section h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: 700;
+  letter-spacing: 1px;
+  color: darkcyan;
+  padding-bottom:-2em;
+}
+
+section h3 {
+  color: #708090;
+  font-weight: normal;
+}
+
+ul, dl, h3 {
+  margin-left: 60px;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.6em;
+}
+
+ul, dl {
+  margin-bottom: 40px;
+}
+
+dd {
+  margin-left:-60px;
+  color: #708090;
+  margin-bottom: 20px;
+}
+
+time {
+  font-size:21px;
+  font-weight: bold;
+  margin-left:-60px;
+}
+
+li{
+  padding-right:10em;
+  margin-left: 0px;
+ }
+
+
+ .work{
+  margin-left:-60px;
+ }
+
+ .ddd{
+  margin-bottom:0px;
+ }
