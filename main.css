@@ -1,7 +1,7 @@
 html {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     background-color: lightgray;
 }
@@ -79,9 +79,43 @@ div{
 }
 
 body{
+    font-family: 'Poppins', sans-serif;
     background-image: url(/img/Background\ image.svg)
 }
 
+.scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+  
+.card {
+    display: inline-block;
+    width: 1fr;
+    height: 1fr;
+    background-color: #a0829e;
+}
+
+#chart{
+    transform: scale(.6);
+    width: 600px;
+    margin: 0px;
+}
+
+#profile{
+    height: 300px;
+    width: 200px;
+    align-content: center;
+    margin:0px;
+}
+
+.resume{
+    padding-left: 15px;
+}
+/* .image{
+    transform: scale(.5);
+    margin: 0;
+} */
     /* ==================================
     Animation Station
      ==================================*/

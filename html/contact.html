@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="/main.css">
         <!-- <link rel="stylesheet" href="css/grid.css"> -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="/css/contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,700" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
 
@@ -30,17 +31,32 @@
 
 
     <div class="margin">
-        <h2>Contact</h2>
+    
+    <h2>Contact</h2>
 
-            <p>Name</p>
-        <div id="cname"><span id="intypebox">your name here...</span></div>
-            <p>Email</p>
-        <div id="cname"><span id="intypebox">your email here...</span></div>
-            <p>Comment</p>
-        <div id="comment"><span id="intypebox">what would you like to say</span></div>
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+          
+        </form>
+      </div>
 
-        <h2>Put in icons and things like that to link to my social media</h2>
-    </div>
 
     </body>
 
